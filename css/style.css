@@ -26,11 +26,17 @@ body {
 
 .link{
      text-decoration: none;
+     /* display: inline-block; */
 }
 .list {
     list-style: none;
+    margin: 0;
+    padding-left: 0;
 }
 
+h1, h2, h3, p {
+    margin: 0;
+}
 .visually-hidden {
     position: absolute;
       white-space: nowrap;
@@ -43,12 +49,24 @@ body {
       clip-path: inset(50%);
       margin: -1px;
 }
-
+/* Контейнер */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: 1px solid red;
+}
 
 
 /* header styles */
+.page-header .container {
+    display: flex;
+    align-items: center;
+}
 
   .header-logo-studio {
+        margin-right: 93px;
+
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
@@ -124,6 +142,7 @@ body {
 
 }
 /* features */
+
 .features-title {
     font-weight: 700;
     font-size: 14px;
@@ -220,6 +239,7 @@ color: var(--accent-color);
 .portfolio-button:focus {
     color: var(--main-white-color);
     background-color: var(--accent-color);
+
 }
 .portfolio-button {
     cursor: pointer;
