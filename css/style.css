@@ -15,6 +15,7 @@
     --bg-color: #F5F4FA;
     --activ: #188CE8;
     --clear-color-text: rgba(255, 255, 255, 0.6);
+    --specific-ident: 94px;
 }
 
 /* General styles */
@@ -59,14 +60,16 @@ h1, h2, h3, p {
 
 
 /* header styles */
+
 .page-header .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+ 
 }
 
-  .header-logo-studio {
-        margin-right: 93px;
-
+.header-logo-studio {
+        
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
@@ -82,13 +85,23 @@ h1, h2, h3, p {
     letter-spacing: 0.03em;
     color: var(--accent-color);
     }
-  
+  .header-list {
+    display: flex;
+    margin-left: 93px;
+    padding: 32px;
+   
+    
+
+  }
 .header-list-link {
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--main-color-text);
+    }
+    .header-list .item:not(:first-child) {
+     margin-left: 50px;
     }
     
 .header-nav .current {
@@ -97,23 +110,33 @@ h1, h2, h3, p {
 
 .header-list-link:hover,
 .header-list-link:focus,
-.header-contats:hover,
-.header-contats:focus {
+.contats:hover,
+.contats:focus {
     color: var(--accent-color);
 }
-.header-contats {
+.contats {
+    
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--second-color-text);
 }
+.header-contacts {
+    margin-left: auto;;
+}
 
 /* Hero styles*/
 .hero {
     background-color: var(--second-bg-color);
-}
+    
+    }
+ 
+
 .hero-title {
+    padding-top: 200px;
+
+
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
@@ -129,6 +152,13 @@ h1, h2, h3, p {
     background-color: var(--activ);
 }
 .hero-button {
+    display: block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    margin-top: 30px;
+    
+    
+
     color: var(--main-white-color);
     background-color: var(--accent-color);
 
