@@ -68,7 +68,6 @@ p {
 .page-header .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -93,15 +92,13 @@ p {
 
 .header-list {
     display: flex;
-    padding-left: 93px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-
-
-}
+    margin-left: 93px;
+  }
 
 .header-list-link {
+    display: block;
+    padding: 32px 0;
+
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -125,6 +122,8 @@ p {
 }
 
 .contats {
+    display: block;
+    padding: 32px 0;
 
     font-weight: 500;
     font-size: 14px;
@@ -133,9 +132,13 @@ p {
     color: var(--second-color-text);
 }
 
-.header-contacts {
+.header-contact {
+    display: flex;
     margin-left: auto;
     ;
+}
+.header-contact .item+.item {
+    margin-left: 50px;
 }
 
 /* Hero styles*/
