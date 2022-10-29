@@ -15,8 +15,7 @@
     --bg-color: #F5F4FA;
     --activ: #188CE8;
     --clear-color-text: rgba(255, 255, 255, 0.6);
-    --specific-ident: 94px;
-}
+    }
 
 /* General styles */
 body {
@@ -129,13 +128,16 @@ h1, h2, h3, p {
 /* Hero styles*/
 .hero {
     background-color: var(--second-bg-color);
-    
-    }
- 
+        }
+ .hero .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
 
 .hero-title {
-    padding-top: 200px;
-
+    padding: 200px 237px 30px;
+   
 
     font-weight: 900;
     font-size: 44px;
@@ -155,9 +157,8 @@ h1, h2, h3, p {
     display: block;
     padding: 10px 32px;
     border-radius: 4px;
-    margin-top: 30px;
-    
-    
+    margin-bottom: 200px;
+       
 
     color: var(--main-white-color);
     background-color: var(--accent-color);
@@ -172,6 +173,15 @@ h1, h2, h3, p {
 
 }
 /* features */
+  
+.features-list {
+    display: flex;
+    padding-top: 94px;
+    }
+      
+.features-list,.occupation-list .item:not(:first-child) {
+     margin-left: 30px;
+       }
 
 .features-title {
     font-weight: 700;
@@ -179,13 +189,15 @@ h1, h2, h3, p {
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
 }
 .features-title-item {
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--second-color-text);
-}
+    padding-top: 10px;
+   }
 /* occupation */
 .occupation-title{
     font-weight: 700;
@@ -193,15 +205,37 @@ h1, h2, h3, p {
     line-height: calc(42 / 36);
     letter-spacing: 0.03em;
     text-align: center;
+    padding-top: 94px;
    }
+   .occupation-list {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 94px;
+   }
+    
 /* team */ 
 .team {
     background-color: var(--bg-color)
 }
+.team .container {
+    display: flex;
+    flex-direction: column;
+}
 .team-list {
     background-color: var(--main-white-color);
 }
+
+.team-item {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 94px;
+}
+.team-item .team-list:not(:first-child) {
+    margin-left: 30px;
+      }
 .team-title {
+    padding-top: 94px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -209,13 +243,17 @@ h1, h2, h3, p {
     text-align: center;
    }
 .team-name {
+    padding-top: 30px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);
     letter-spacing: 0.03em;
     text-align: center;
    }
-.team-item {
+.team-profession {
+    padding-top: 10px;
+
     font-size: 16px;
     line-height: calc(19 / 16);
     letter-spacing: 0.03em;
@@ -223,6 +261,15 @@ h1, h2, h3, p {
     color: var(--second-color-text);
 }
 /* footer */
+.footer-page .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+     padding: 60px 0;
+}
+.address-page {
+    padding-top: 20px;
+}
 .footer-page {
     background-color: var(--second-bg-color)
 }
